@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Muzz</string>
+    <string name="debug_string">placeholder</string>
+
+    <!-- Preferences -->
+    <string name="prefkey_library_page_order_string">library_page_order</string>
+    <string name="prefdef_library_page_order_string">playlists|artists|albums|songs</string>
 </resources>
