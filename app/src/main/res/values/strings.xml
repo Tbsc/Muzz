@@ -5,4 +5,11 @@
     <!-- Preferences -->
     <string name="prefkey_library_page_order_string">library_page_order</string>
     <string name="prefdef_library_page_order_string">playlists|artists|albums|songs</string>
+
+    <!-- Content descriptions -->
+    <string name="desc_nowplaying_cover">Playing track cover art</string>
+
+    <!-- Views -->
+    <string name="tv_now_playing_bar_artistalbum_placeholder">Long Artist Name - Album That Demonstrates Marquee</string>
+    <string name="tv_now_playing_bar_tracktitle_placeholder">Track Title That Is Long Enough For Marquee To Work</string>
 </resources>
