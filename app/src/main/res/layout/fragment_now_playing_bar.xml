@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/clayout_nowplayingbar"
+    android:id="@+id/layoutNowPlayingBarConstraint"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_nowplaying_bar"
@@ -10,7 +10,7 @@
     android:focusable="true">
 
     <ImageView
-        android:id="@+id/img_nowplayingbar_coverart"
+        android:id="@+id/coverArtNowPlayingBarImg"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:contentDescription="@string/desc_nowplaying_cover"
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/sample_cover" />
 
     <TextView
-        android:id="@+id/tv_nowplayingbar_tracktitle"
+        android:id="@+id/trackTitleNowPlayingBarTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -33,15 +33,14 @@
         android:text="@string/tv_now_playing_bar_tracktitle_placeholder"
         android:textAppearance="@style/TextAppearance.AppCompat.Title.Inverse"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_nowplayingbar_artistalbum"
-        app:layout_constraintEnd_toStartOf="@+id/btn_nowplayingbar_prev"
+        app:layout_constraintBottom_toTopOf="@+id/artistAlbumNowPlayingBarTv"
+        app:layout_constraintEnd_toStartOf="@+id/prevNowPlayingBarBtn"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/img_nowplayingbar_coverart"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintStart_toEndOf="@+id/coverArtNowPlayingBarImg"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tv_nowplayingbar_artistalbum"
+        android:id="@+id/artistAlbumNowPlayingBarTv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -53,37 +52,37 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Medium.Inverse"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/tv_nowplayingbar_tracktitle"
+        app:layout_constraintEnd_toEndOf="@+id/trackTitleNowPlayingBarTv"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tv_nowplayingbar_tracktitle"
-        app:layout_constraintTop_toBottomOf="@+id/tv_nowplayingbar_tracktitle" />
+        app:layout_constraintStart_toStartOf="@+id/trackTitleNowPlayingBarTv"
+        app:layout_constraintTop_toBottomOf="@+id/trackTitleNowPlayingBarTv" />
 
     <ImageButton
-        android:id="@+id/btn_nowplayingbar_prev"
+        android:id="@+id/prevNowPlayingBarBtn"
         android:layout_width="44dp"
         android:layout_height="0dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:padding="8dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_nowplayingbar_playpause"
+        app:layout_constraintEnd_toStartOf="@+id/playPauseNowPlayingBarBtn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_skip_previous_white_24dp" />
 
     <ImageButton
-        android:id="@+id/btn_nowplayingbar_playpause"
+        android:id="@+id/playPauseNowPlayingBarBtn"
         android:layout_width="48dp"
         android:layout_height="0dp"
         android:background="?attr/selectableItemBackgroundBorderless"
         android:padding="4dp"
         android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btn_nowplayingbar_next"
+        app:layout_constraintEnd_toStartOf="@+id/nextNowPlayingBarBtn"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_play_arrow_white_24dp" />
 
     <ImageButton
-        android:id="@+id/btn_nowplayingbar_next"
+        android:id="@+id/nextNowPlayingBarBtn"
         android:layout_width="52dp"
         android:layout_height="0dp"
         android:background="?attr/selectableItemBackgroundBorderless"
